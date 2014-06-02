@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<servlet>
+		<servlet-name>Acesso_Total</servlet-name>
+		<servlet-class>br.com.acessoTotal.Acesso_TotalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Acesso_Total</servlet-name>
+		<url-pattern>/acesso_total</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Denuncia</servlet-name>
+		<servlet-class>br.com.acessoTotal.DenunciaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Denuncia</servlet-name>
+		<url-pattern>/denuncia</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Denuncias</servlet-name>
+		<servlet-class>br.com.acessoTotal.DenunciasServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Denuncias</servlet-name>
+		<url-pattern>/denuncias</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
